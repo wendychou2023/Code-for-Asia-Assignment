@@ -1,7 +1,6 @@
 # Code-for-Asia-Assignment
 **Challenge C<br/>**
-#1:<br/>
-Optional :<br/>
+#1 Optional :<br/>
 For #1: Divide no. of users by the resident population of the country (you’d have to look up these data and note the sources yourself).<br/>
  -US:  331,449,281 (2020 U.S. Census)<br/>
  -Indonesia: 270,200,000 (https://www.bps.go.id/website/materi_ind/materiBrsInd-20210121151046.pdf)<br/>
