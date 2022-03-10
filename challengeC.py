@@ -54,7 +54,7 @@ def plot_heatmap(s):
 
 
 # C#2
-# Data cleaning for Sheet 1
+# Data cleaning for Sheet 2
 df2 = pd.read_excel(r'SocMed_Geographic.xlsx', 'Sheet2')
 df2 = df2.rename(columns={'Duration of time spent on platform per day': 'United States', 'Unnamed: 2': 'Indonesia', 'Unnamed: 3': 'Singapore',
                           'Unnamed: 4': 'China', 'Unnamed: 5': 'India', 'Unnamed: 6': 'Vietnam', 'Unnamed: 7': 'Philippines', 'Unnamed: 8': 'Bangladesh'})
