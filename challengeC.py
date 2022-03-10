@@ -76,7 +76,7 @@ for col in df2.columns:
         if isinstance(df2[col].values[i-1], int) or isinstance(df2[col].values[i-1], float):
             continue
         elif any(j.isdigit() for j in df2[col].values[i-1]) == False:
-            # Not sure how to convert 'fourhour' to 240 minutes, so I change it manually
+            # Not sure how to convert 'fourhour' to 240 minutes, so I assign the value directly
             df2[col].values[i-1] = 240.0
         elif ('hour' and 'mins') in df2[col].values[i-1]:
             a, b = df2[col].values[i-1].split('hour')
@@ -92,6 +92,7 @@ for col in df2.columns:
                                                    1].translate({ord(j): None for j in 'minutes'})
             df2[col].values[i-1] = float(df2[col].values[i-1])
         else:
+            # Convert string to float for future value ranking
             df2[col].values[i-1] = float(df2[col].values[i-1])
 
 # C#2: Show social media usage ranking for each country
